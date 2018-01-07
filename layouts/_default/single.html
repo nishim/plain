@@ -1,0 +1,20 @@
+{{ define "title" }}{{ .Title }} – {{ .Site.Title }}{{ end }}
+
+{{ define "meta" }}
+  {{ partial "structured-data" . }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article class='p-article'>
+    <header>
+      {{ partial "article-meta" . }}
+      <h1 class='title'>{{ .Title }}</h1>
+      {{ partial "tags" . }}
+    </header>
+    <div class='body'>
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

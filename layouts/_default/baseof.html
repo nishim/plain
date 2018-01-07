@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    {{ .Hugo.Generator }}
+    {{ template "_internal/google_analytics_gtag.html" . }}
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    {{ block "meta" . }}
+    {{ end }}
+  </head>
+  <body ontouchstart=''>
+    <header class='l-header p-header'>
+      <a class='logo' href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      {{ partial "navi" . }}
+    </header>
+    <main class='l-main'>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    <footer class='l-footer p-footer'>
+      <div class='c-copyright'>
+        <p class='copyright'>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span>&copy; {{ .Site.Title }}</span>{{ end }}</p> | 
+        <aside class='generated-by'>
+          <p>Powered by <a href='https://gohugo.io/'>Hugo</a> &amp; <a href='https://github.com/nishim/plain'>plain</a>.</p>
+        </aside>
+      </div>
+    </footer>
+  </body>
+</html>
