@@ -72,7 +72,7 @@ body {
 .l-main {
 }
 .l-footer {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 /* components */
@@ -104,10 +104,12 @@ body {
 }
 
 .c-copyright {
-    display: flex; 
+    font-size: 0.8rem;
     & .copyright {
+        text-align: center;
     }
     & .generated-by {
+        text-align: center;
     }
 }
 

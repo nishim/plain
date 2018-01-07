@@ -21,7 +21,7 @@
     </main>
     <footer class='l-footer p-footer'>
       <div class='c-copyright'>
-        <p class='copyright'>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span>&copy; {{ .Site.Title }}</span>{{ end }}</p> | 
+        <p class='copyright'>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span>&copy; {{ .Site.Params.Author }}</span>{{ end }}</p>
         <aside class='generated-by'>
           <p>Powered by <a href='https://gohugo.io/'>Hugo</a> &amp; <a href='https://github.com/nishim/plain'>plain</a>.</p>
         </aside>
