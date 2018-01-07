@@ -54,17 +54,17 @@ a {
 
 body {
   width: 70%;
-  margin: 0.5em auto; }
+  margin: 0.5rem auto; }
 
 @media screen and (max-device-width: 480px) {
   body {
     width: 94%; } }
 /* layouts */
 .l-header {
-  margin: 4em 0; }
+  margin: 2rem 0; }
 
 .l-footer {
-  margin-top: 4em; }
+  margin-top: 4rem; }
 
 /* components */
 .c-nav .icon {
@@ -76,12 +76,12 @@ body {
   flex-wrap: wrap; }
   .c-tags .tag {
     align-items: center;
-    margin-right: 1em;
-    line-height: 1.2em;
+    margin-right: 1rem;
+    line-height: 1.2rem;
     color: #000;
     text-align: top; }
   .c-tags .tag::before {
-    margin-right: 0.1em;
+    margin-right: 0.1rem;
     content: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2220%22%20height=%2220%22%20viewBox=%220%200%2024%2020%22%20fill=%22none%22%20stroke=%22currentColor%22%20stroke-width=%222%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%20class=%22feather%20feather-tag%22%3E%3Cpath%20d=%22M20.59%2013.41l-7.17%207.17a2%202%200%200%201-2.83%200L2%2012V2h10l8.59%208.59a2%202%200%200%201%200%202.82z%22%3E%3C/path%3E%3Cline%20x1=%227%22%20y1=%227%22%20x2=%227%22%20y2=%227%22%3E%3C/line%3E%3C/svg%3E"); }
 
 .c-copyright {
@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: space-between; }
   .p-header .logo {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #000; }
     .p-header .logo:hover {
       color: #000; }
@@ -106,54 +106,51 @@ body {
 .p-article-list .link {
   color: #000; }
 .p-article-list .p-article {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
 .p-article .title {
   font-size: 2rem;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5rem; }
 .p-article .c-meta {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5rem; }
 .p-article .body {
-  margin: 1em 0;
+  margin: 2rem 0;
   /** style for article body */ }
   .p-article .body h2 {
     font-size: 1.6rem;
     border-bottom: 1px solid #000;
-    margin-top: 0.8em;
+    margin-top: 1rem;
     padding-bottom: 2px; }
   .p-article .body h3 {
     font-size: 1.4rem;
     border-bottom: 1px solid #000;
-    margin-top: 0.8em;
+    margin-top: 1rem;
     padding-bottom: 2px; }
   .p-article .body h4 {
     font-size: 1.3rem;
-    border-bottom: 1px solid #000;
-    margin-top: 0.8em;
+    margin-top: 1rem;
     padding-bottom: 2px; }
   .p-article .body h5 {
     font-size: 1.2rem;
-    border-bottom: 1px solid #000;
-    margin-top: 0.8em;
+    margin-top: 1rem;
     padding-bottom: 2px; }
   .p-article .body h6 {
     font-size: 1.1rem;
-    border-bottom: 1px solid #000;
-    margin-top: 0.8em;
+    margin-top: 1rem;
     padding-bottom: 2px; }
   .p-article .body p {
-    margin-top: 0.5em;
-    line-height: 1.2em; }
+    margin-top: 0.5rem;
+    line-height: 1.2rem; }
   .p-article .body ul li {
     list-style: disc; }
   .p-article .body ol li {
     list-style: decimal; }
   .p-article .body li {
-    margin: 0.5em 0 0.5em 2em;
-    line-height: 1.2em; }
+    margin: 0.5rem 0 0.5rem 2rem;
+    line-height: 1.2rem; }
   .p-article .body pre {
-    margin: 1em 0;
-    padding: 0.8em;
+    margin: 1rem 0;
+    padding: 0.8rem;
     overflow: scroll;
     border: 1px solid #999;
     background-color: #eee; }
