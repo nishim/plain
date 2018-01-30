@@ -160,36 +160,43 @@ body {
         $margin-top-h: 2rem;
         $margin-top-p: 0.5rem;
         $padding-bottom-h: 2px;
+        $line-height-h: 1.4rem;
+        $line-height-p: 1.5rem;
         & h2 {
             font-size: 1.6rem;
             border-bottom: 1px solid #000;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
+            line-height: $line-height-h;
         }
         & h3 {
             font-size: 1.4rem;
             border-bottom: 1px solid #000;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
+            line-height: $line-height-h;
         }
         & h4 {
             font-size: 1.3rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
+            line-height: $line-height-h;
         }
         & h5 {
             font-size: 1.2rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
+            line-height: $line-height-h;
         }
         & h6 {
             font-size: 1.1rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
+            line-height: $line-height-h;
         }
         & p {
             margin-top: $margin-top-p;
-            line-height: 1.2rem;
+            line-height: 1.5rem;
         }
         & ul li {
             list-style: disc;

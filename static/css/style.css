@@ -124,27 +124,32 @@ body {
     font-size: 1.6rem;
     border-bottom: 1px solid #000;
     margin-top: 2rem;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    line-height: 1.4rem; }
   .p-article .body h3 {
     font-size: 1.4rem;
     border-bottom: 1px solid #000;
     margin-top: 2rem;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    line-height: 1.4rem; }
   .p-article .body h4 {
     font-size: 1.3rem;
     margin-top: 2rem;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    line-height: 1.4rem; }
   .p-article .body h5 {
     font-size: 1.2rem;
     margin-top: 2rem;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    line-height: 1.4rem; }
   .p-article .body h6 {
     font-size: 1.1rem;
     margin-top: 2rem;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    line-height: 1.4rem; }
   .p-article .body p {
     margin-top: 0.5rem;
-    line-height: 1.2rem; }
+    line-height: 1.5rem; }
   .p-article .body ul li {
     list-style: disc; }
   .p-article .body ol li {
