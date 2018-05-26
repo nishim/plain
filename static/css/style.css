@@ -78,7 +78,7 @@ body {
   .c-tags .tag {
     align-items: center;
     margin-right: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.2;
     color: #000;
     text-align: top; }
   .c-tags .tag::before {
@@ -123,44 +123,44 @@ body {
   /** style for article body */ }
   .p-article .body .catch {
     text-align: center;
-    margin: 1.5em 0; }
+    margin: 1.5rem 0; }
   .p-article .body h2 {
     font-size: 1.6rem;
     border-bottom: 1px solid #000;
     margin-top: 2rem;
     padding-bottom: 2px;
-    line-height: 1.4rem; }
+    line-height: 1.4; }
   .p-article .body h3 {
     font-size: 1.4rem;
     border-bottom: 1px solid #000;
     margin-top: 2rem;
     padding-bottom: 2px;
-    line-height: 1.4rem; }
+    line-height: 1.4; }
   .p-article .body h4 {
     font-size: 1.3rem;
     margin-top: 2rem;
     padding-bottom: 2px;
-    line-height: 1.4rem; }
+    line-height: 1.4; }
   .p-article .body h5 {
     font-size: 1.2rem;
     margin-top: 2rem;
     padding-bottom: 2px;
-    line-height: 1.4rem; }
+    line-height: 1.4; }
   .p-article .body h6 {
     font-size: 1.1rem;
     margin-top: 2rem;
     padding-bottom: 2px;
-    line-height: 1.4rem; }
+    line-height: 1.4; }
   .p-article .body p {
     margin-top: 0.5rem;
-    line-height: 1.5rem; }
+    line-height: 1.5; }
   .p-article .body ul li {
     list-style: disc; }
   .p-article .body ol li {
     list-style: decimal; }
   .p-article .body li {
     margin: 0.5rem 0 0.5rem 2rem;
-    line-height: 1.2rem; }
+    line-height: 1.2; }
   .p-article .body pre {
     margin: 1rem 0;
     padding: 0.8rem;
@@ -168,6 +168,9 @@ body {
     border: 1px solid #999;
     background-color: #eee; }
   .p-article .body pre code {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace; }
+  .p-article .body p code {
+    background-color: #eee;
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace; }
   .p-article .body blockquote {
     position: relative;

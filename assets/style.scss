@@ -88,7 +88,7 @@ body {
     & .tag {
         align-items: center;
         margin-right: 1rem;
-        line-height: 1.2rem;
+        line-height: 1.2;
         color: #000;
         text-align: top;
     }
@@ -158,15 +158,15 @@ body {
 
         .catch {
             text-align:center;
-            margin: 1.5em 0;
+            margin: 1.5rem 0;
         }
 
         /** style for article body */
         $margin-top-h: 2rem;
         $margin-top-p: 0.5rem;
         $padding-bottom-h: 2px;
-        $line-height-h: 1.4rem;
-        $line-height-p: 1.5rem;
+        $line-height-h: 1.4;
+        $line-height-p: 1.5;
         & h2 {
             font-size: 1.6rem;
             border-bottom: 1px solid #000;
@@ -201,7 +201,7 @@ body {
         }
         & p {
             margin-top: $margin-top-p;
-            line-height: 1.5rem;
+            line-height: $line-height-p;
         }
         & ul li {
             list-style: disc;
@@ -211,7 +211,7 @@ body {
         }
         & li {
             margin: 0.5rem 0 0.5rem 2rem;
-            line-height: 1.2rem;
+            line-height: 1.2;
         }
         & pre {
             margin: 1rem 0;
@@ -221,6 +221,10 @@ body {
             background-color: #eee;
         }
         & pre code {
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+        }
+        & p code {
+            background-color: #eee;
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
 
