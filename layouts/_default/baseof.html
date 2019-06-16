@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang='ja'>
   <head>
-    {{ .Hugo.Generator }}
-    {{ if not .Site.BuildDrafts }}{{ template "_internal/google_analytics_gtag.html" . }}{{ end }}
+    {{ hugo.Generator }}
+    {{ if not .Site.BuildDrafts }}{{ template "_internal/google_analytics_async.html" . }}{{ end }}
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    {{ $style := resources.Get "style.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ block "meta" . }}
     {{ end }}
   </head>
@@ -23,7 +24,7 @@
       <div class='c-copyright'>
         <p class='copyright'>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span>&copy; {{ .Site.Params.Author }}</span>{{ end }}</p>
         <aside class='generated-by'>
-          <p>Powered by <a href='https://gohugo.io/'>Hugo</a> &amp; <a href='https://github.com/nishim/plain'>plain</a>.</p>
+          <p>Powered by <a href='https://gohugo.io/'>Hugo</a> &amp; <a href='https://github.com/nishim/plain'>plain</a>. Using <a href=https://www.google.com/intl/ja/policies/privacy/partners/>Google Analytics</a></p>
         </aside>
       </div>
     </footer>
