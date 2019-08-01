@@ -48,9 +48,12 @@ table {
     border-spacing: 0;
 }
 
+$link-color: RoyalBlue;
+$link-color-visited: Brown;
+
 /* foundation */
 a {
-    color: #1122CC;
+    color: $link-color;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -110,6 +113,86 @@ body {
     }
     & .generated-by {
         text-align: center;
+    }
+}
+
+.c-blogcard {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 1rem 0.8rem;
+
+    @media (min-width:800px) {
+        width: 70%;
+    }
+
+    a {
+        color: $link-color;
+        &:hover, &:visited {
+            color: $link-color;
+        }
+    }
+
+    .blogcard-content {
+        display: flex;
+        flex-flow: column;
+        justify-content:space-between;
+
+        width: calc(100% - 12rem);
+
+        a {
+            color: $link-color;
+            &:hover, &:visited {
+                color: $link-color;
+            }
+        }
+
+        .blogcard-title {
+            font-size: 1.2rem;
+
+            a {
+                color: $link-color;
+                &:hover, &:visited {
+                    color: $link-color;
+                }
+            }
+        }
+        .blogcard-desc {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            line-height: 1.2;
+            color: #666;
+        }
+        .blogcard-site a {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+
+            color: $link-color;
+            &:hover, &:visited {
+                color: $link-color;
+            }
+
+            img {
+                width: 1rem;
+                height: 1rem;
+                margin-right: 0.2rem;
+            }
+            
+            .blogcard-sitename {
+                margin: 0;
+                line-height: 1;
+            }
+        }
+    }
+    .blogcard-image {
+        width: 10rem;
+        img {
+            width: 10rem;
+        }
     }
 }
 
@@ -267,13 +350,13 @@ body {
 
         & a {
             text-decoration: none;
-            color: RoyalBlue;
+            color: $link-color;
             &:hover {
-                color: RoyalBlue;
+                color: $link-color;
                 text-decoration: underline;
             }
             &:visited {
-                color: Brown;
+                color: $link-color-visited;
             }
         }
     }

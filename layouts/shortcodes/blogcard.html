@@ -1,0 +1,17 @@
+{{ $url := .Get 0 }}
+{{ $json := getJSON $.Page.Site.Params.ogpapi $url }}
+
+<div class="c-blogcard">
+  <div class="blogcard-content">
+    <div>
+      <div class="blogcard-title"><a href="{{ $json.url }}">{{ $json.title }}</a></div>
+      <div class="blogcard-desc">{{ $json.description }}</div>
+    </div>
+    <div class="blogcard-site">
+      <a href="{{ $json.site_url }}">
+        <img src="{{ $json.favicon }}"><p class="blogcard-sitename">{{ $json.site_name }}</p>
+      </a>
+    </div>
+  </div>
+  <figure class="blogcard-image"><a href="{{ $json.url }}"><img src="{{ $json.image }}"></a></figure>
+</div>
