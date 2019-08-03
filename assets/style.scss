@@ -313,7 +313,8 @@ body {
         & pre code {
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
-        & p code {
+        p code,
+        li code {
             padding: 2px;
             background-color: #eee;
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
@@ -364,6 +365,12 @@ body {
             }
             &:visited {
                 color: $link-color-visited;
+            }
+        }
+
+        img {
+            @media screen and (max-width: 480px) {
+                width: 100%;
             }
         }
     }
