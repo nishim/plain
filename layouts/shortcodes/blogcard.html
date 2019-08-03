@@ -1,5 +1,5 @@
 {{ $url := .Get 0 }}
-{{ $json := getJSON $.Page.Site.Params.ogpapi $url }}
+{{ $json := getJSON $.Page.Site.Params.blogcardapi $url }}
 
 <div class="c-blogcard">
   <div class="blogcard-content">
@@ -9,9 +9,11 @@
     </div>
     <div class="blogcard-site">
       <a href="{{ $json.site_url }}">
-        <img src="{{ $json.favicon }}"><p class="blogcard-sitename">{{ $json.site_name }}</p>
+        {{ if $json.favicon }}<img src="{{ $json.favicon }}">{{ end }}<p class="blogcard-sitename">{{ $json.site_name }}</p>
       </a>
     </div>
   </div>
+  {{ if $json.image }}
   <figure class="blogcard-image"><a href="{{ $json.url }}"><img src="{{ $json.image }}"></a></figure>
+  {{ end }}
 </div>
