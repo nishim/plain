@@ -228,7 +228,8 @@ body {
 
 .p-article {
     & .title {
-        font-size: 1.85rem;
+        font-size: 1.6rem;
+        font-weight: 600;
         line-height: 1.2;
         margin-bottom: 0.5rem;
     }
@@ -238,7 +239,8 @@ body {
     }
 
     & .body {
-        margin: 2rem 0;
+        margin: 3rem 0 2rem;
+        overflow-wrap: break-word;
 
         .catch {
             text-align:center;
@@ -246,21 +248,19 @@ body {
         }
 
         /** style for article body */
-        $margin-top-h: 2rem;
+        $margin-top-h: 1.5rem;
         $margin-top-p: 0.5rem;
         $padding-bottom-h: 2px;
-        $line-height-h: 1.5;
-        $line-height-p: 1.6;
+        $line-height-h: 1.9;
+        $line-height-p: 1.9;
         & h2 {
-            font-size: 1.6rem;
-            border-bottom: 1px solid #000;
-            margin-top: $margin-top-h;
+            font-size: 1.8rem;
+            margin-top: 3rem;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
         & h3 {
-            font-size: 1.4rem;
-            border-bottom: 1px solid #000;
+            font-size: 1.5rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
@@ -287,15 +287,21 @@ body {
             margin-top: $margin-top-p;
             line-height: $line-height-p;
         }
+        & > ul {
+            margin: 2rem 0;
+        }
         & ul li {
             list-style: disc;
+        }
+        & > ol {
+            margin: 2rem 0;
         }
         & ol li {
             list-style: decimal;
         }
         & li {
             margin: 0.5rem 0 0.5rem 2rem;
-            line-height: 1.2;
+            line-height: 1.6;
         }
         & pre {
             margin: 1rem 0;
@@ -308,6 +314,7 @@ body {
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
         & p code {
+            padding: 2px;
             background-color: #eee;
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
