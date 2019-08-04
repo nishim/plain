@@ -16,7 +16,7 @@
   },
   "publisher": {
     "@type": "Person",
-    "name": {{ .Params.Author }},
+    "name": {{ .Site.Params.Author }},
     "url": {{ .Site.BaseURL }}
   },
   "description": {{ .Description | default .Summary }}
