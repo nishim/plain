@@ -249,7 +249,7 @@ body {
 
         /** style for article body */
         $margin-top-h: 1.5rem;
-        $margin-top-p: 0.5rem;
+        $margin-top-p: 1.5rem;
         $padding-bottom-h: 2px;
         $line-height-h: 1.9;
         $line-height-p: 1.9;
@@ -372,6 +372,11 @@ body {
             @media screen and (max-width: 480px) {
                 width: 100%;
             }
+        }
+
+        hr {
+            width: 20%;
+            margin: 3rem auto;
         }
     }
 }
