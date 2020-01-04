@@ -63,6 +63,7 @@ body {
     width: 70%;
     margin: 0.5rem auto;
 }
+
 @media screen and (max-device-width: 480px) {
   body {
     width: 94%;
@@ -305,16 +306,16 @@ body {
         }
         & pre {
             margin: 1rem 0;
-            padding: 0.8rem;
             overflow: scroll;
             border: 1px solid #999;
             background-color: #eee;
         }
         & pre code {
+            padding: 0.8rem;
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
-        p code,
-        li code {
+        p > code,
+        li > code {
             padding: 2px;
             background-color: #eee;
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
@@ -380,3 +381,5 @@ body {
         }
     }
 }
+
+@import "highlight.js-styles/a11y-dark"
