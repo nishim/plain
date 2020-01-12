@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", 'ヒラギノ角ゴ Pro W3','ヒラギノ角ゴ W3', "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
 }
 ol, ul {
     list-style: none;
@@ -239,7 +240,7 @@ body {
         margin-bottom: 0.5rem;
     }
 
-    & .body {
+    .body {
         margin: 3rem 0 2rem;
         overflow-wrap: break-word;
 
@@ -252,65 +253,66 @@ body {
         $margin-top-h: 1.5rem;
         $margin-top-p: 1.5rem;
         $padding-bottom-h: 2px;
-        $line-height-h: 1.9;
-        $line-height-p: 1.9;
-        & h2 {
-            font-size: 1.8rem;
+        $line-height-h: 1.8;
+        $line-height-p: 1.8;
+
+        h2 {
+            font-size: 2rem;
             margin-top: 3rem;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
-        & h3 {
+        h3 {
             font-size: 1.5rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
-        & h4 {
+        h4 {
             font-size: 1.3rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
-        & h5 {
+        h5 {
             font-size: 1.2rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
-        & h6 {
+        h6 {
             font-size: 1.1rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
-        & p {
+        p {
             margin-top: $margin-top-p;
             line-height: $line-height-p;
         }
-        & > ul {
+        > ul {
             margin: 2rem 0;
         }
-        & ul li {
+        ul li {
             list-style: disc;
         }
-        & > ol {
+        > ol {
             margin: 2rem 0;
         }
-        & ol li {
+        ol li {
             list-style: decimal;
         }
-        & li {
+        li {
             margin: 0.5rem 0 0.5rem 2rem;
             line-height: 1.6;
         }
-        & pre {
+        pre {
             margin: 1rem 0;
             overflow: scroll;
             border: 1px solid #999;
             background-color: #eee;
         }
-        & pre code {
+        pre code {
             padding: 0.8rem;
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
@@ -321,7 +323,7 @@ body {
             font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
         }
 
-        & blockquote {
+        blockquote {
             position: relative;
             margin: 1rem 0;
             padding: 0.5rem 0.5rem 0.5rem 4rem;
@@ -331,7 +333,7 @@ body {
             color: #555;
         }
         
-        & blockquote:before {
+        blockquote:before {
             display: inline-block;
             position: absolute;
             top: 10px;
@@ -344,20 +346,20 @@ body {
             line-height: 1;
         }
         
-        & blockquote p {
+        blockquote p {
             padding: 0;
             margin: 10px 0;
             line-height: 1.5;
         }
         
-        & blockquote cite {
+        blockquote cite {
             display: block;
             text-align: right;
             color: #888888;
             font-size: 0.9em;
         }
 
-        & a {
+        a {
             text-decoration: none;
             color: $link-color;
             &:hover {
@@ -369,10 +371,12 @@ body {
             }
         }
 
+        figure {
+            margin: 1.5rem auto;
+        }
+
         img {
-            @media screen and (max-width: 480px) {
-                width: 100%;
-            }
+            width: 100%;
         }
 
         hr {
