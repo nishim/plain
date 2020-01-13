@@ -49,6 +49,9 @@ table {
     border-spacing: 0;
 }
 
+// 2020 pantone color
+$main-color: #0f4c81;
+
 $link-color: RoyalBlue;
 $link-color-visited: Brown;
 
@@ -253,7 +256,7 @@ body {
         $margin-top-h: 1.5rem;
         $margin-top-p: 1.5rem;
         $padding-bottom-h: 2px;
-        $line-height-h: 1.8;
+        $line-height-h: 1.6;
         $line-height-p: 1.8;
 
         h2 {
@@ -261,27 +264,30 @@ body {
             margin-top: 3rem;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
+            padding-left: .5rem;
+            border-left: .5rem solid $main-color;
+            box-sizing: border-box;
         }
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
         h4 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
         h5 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
         }
         h6 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
