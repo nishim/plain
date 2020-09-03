@@ -258,7 +258,7 @@ body {
 
     .body {
         margin: 3rem 0 2rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         overflow-wrap: break-word;
 
         .catch {
@@ -406,8 +406,9 @@ body {
     }
 
     .share {
-        position: absolute;
-        bottom: 0;
+        position: sticky;
+        text-align: right;
+        bottom: 2rem;
         right: 0;
     }
 }
