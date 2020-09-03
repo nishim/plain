@@ -243,6 +243,8 @@ body {
 }
 
 .p-article {
+    position: relative;
+
     & .title {
         font-size: 1.6rem;
         font-weight: 600;
@@ -256,6 +258,7 @@ body {
 
     .body {
         margin: 3rem 0 2rem;
+        padding-bottom: 4rem;
         overflow-wrap: break-word;
 
         .catch {
@@ -400,6 +403,12 @@ body {
             width: 20%;
             margin: 3rem auto;
         }
+    }
+
+    .share {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
