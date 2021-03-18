@@ -6,6 +6,8 @@
     <meta charset='utf-8'>
     <link rel="icon" href="{{ .Site.BaseURL }}images/logo.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon-180x180.png">
+    <link rel="preconnect dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preconnect dns-prefetch" href="//platform.twitter.com">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ $style := resources.Get "style.scss" | toCSS | minify }}
