@@ -38,6 +38,12 @@
     <script src='/js/highlight.pack.js'></script>
     <script>
       hljs.initHighlightingOnLoad();
+      document.querySelectorAll('.p-article .body a').forEach((e) => {
+        if (e.href.startsWith('http') && !e.href.includes(document.domain)) {
+          e.setAttribute('target', '_blank');
+          e.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
     </script>
   </body>
 </html>
