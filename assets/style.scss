@@ -267,15 +267,15 @@ body {
         }
 
         /** style for article body */
-        $margin-top-h: 1.5rem;
-        $margin-top-p: 1.5rem;
+        $margin-top-h: 3rem;
+        $margin-top-p: 1rem;
         $padding-bottom-h: 2px;
         $line-height-h: 1.6;
         $line-height-p: 1.8;
 
         h2 {
             font-size: 2rem;
-            margin-top: 3rem;
+            margin-top: $margin-top-h;
             padding-bottom: $padding-bottom-h;
             line-height: $line-height-h;
             padding-left: .5rem;
