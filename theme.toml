@@ -7,7 +7,7 @@ licenselink = "https://github.com/nishim/plain/blob/master/LICENSE.md"
 description = "Simple theme for Hugo."
 homepage = "https://github.com/nishim/plain"
 tags = ["blog"]
-features = ["responsive", "structured data", "ogp", "google analytics(gtag)", "twitter cards"]
+features = ["responsive", "structured data", "ogp", "google tag manager", "twitter cards"]
 min_version = "0.30.2"
 
 [author]

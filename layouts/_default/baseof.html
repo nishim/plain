@@ -2,7 +2,6 @@
 <html lang='ja'>
   <head>
     {{ hugo.Generator }}
-    {{ if not .Site.BuildDrafts }}{{ template "_internal/google_analytics_async.html" . }}{{ end }}
     <meta charset='utf-8'>
     <link rel="icon" href="{{ .Site.BaseURL }}images/logo.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon-180x180.png">
@@ -14,6 +13,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ block "meta" . }}
     {{ end }}
+    {{ partial "gtm" . }}
   </head>
   <body ontouchstart=''>
     <header class='l-header p-header'>
