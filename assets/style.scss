@@ -187,7 +187,7 @@ body {
                 height: 1rem;
                 margin-right: 0.2rem;
             }
-            
+
             .blogcard-sitename {
                 margin: 0;
                 line-height: 1;
@@ -352,7 +352,7 @@ body {
             background: #efefef;
             color: #555;
         }
-        
+
         blockquote:before {
             display: inline-block;
             position: absolute;
@@ -365,13 +365,13 @@ body {
             font-size: 4rem;
             line-height: 1;
         }
-        
+
         blockquote p {
             padding: 0;
             margin: 10px 0;
             line-height: 1.5;
         }
-        
+
         blockquote cite {
             display: block;
             text-align: right;
@@ -403,7 +403,8 @@ body {
         }
 
         img {
-            width: 100%;
+            max-width: 100%;
+            height: auto;
         }
 
         hr {
