@@ -1,0 +1,15 @@
+{{ define "main" }}
+<ul class="p-article-list">
+  {{ range (where .Site.RegularPages "Section" "post") }}
+  <li>
+    <article class="p-article">
+      <a class="link" href="{{ .Permalink }}">
+        {{ partial "article-meta" . }}
+        <h2 class="title">{{ .Title }}</h2>
+      </a>
+      {{ partial "tags" . }}
+    </article>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
